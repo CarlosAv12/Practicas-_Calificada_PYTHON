@@ -24,13 +24,13 @@ hours = float(hours)
 minutes = float(minutes)
 #Convertimos a formato decimal (por ejemplo, 7:30 → 7.5)
 total_time = hours + (minutes / 60)
-#Comprobamos el rango para desayuno, almuerzo y cena
+#Comprobamos el rango especificado para desayuno, almuerzo y cena
 if 7 <= total_time <= 8:
     print("Es hora del desayuno.")
 elif 12 <= total_time <= 13:
     print("Es hora del almuerzo.")
 elif 18 <= total_time <= 19:
     print("Es hora de la cena.")
-# Si no es hora de comer, no se imprime nada
+#Si no es hora de comer, no se envía nada
 else:
     print("")
